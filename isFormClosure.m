@@ -30,3 +30,15 @@ function k = isFormClosure(contact)
         end
     end
 end
+
+%{
+test
+
+% for object not in form closure.
+contact = [1.5 1 225; -1.5 1 315; -1.5 -1 45; 1.5 -1 154];
+k = isFormClosure(contact);
+
+% for object in form closure.
+contact = [1.5 1 225; -1.5 1 315; -1.5 -1 45; 1.5 -1 135];
+k = isFormClosure(contact);
+%}
